@@ -1,0 +1,53 @@
+<head>
+    <script type="text/javascript">
+        function GetURL () {
+            var embed = document.getElementById ("myEmbed");
+			var width = screen.width;
+			var height = screen.height;
+
+			if ((width==3840) && (height==2160)) {
+					 embed.setAttribute("src", "http://CSEE-4KTXR/live3/inedx.m3u8");
+					}
+					else if ((width==1920) && (height==1080)) {
+						 embed.setAttribute("src", "http://CSEE-4KTXR/live3/inedx.m3u8");
+						}
+					else if ((width==1680) && (height==1050)) {
+							 embed.setAttribute("src", "http://CSEE-4KTXR/live3/inedx.m3u8");
+						}
+					else if ((width==1440) && (height==900)) {
+							 embed.setAttribute("src", "http://CSEE-4KTXR/live3/inedx.m3u8");
+						}
+					else if ((width==1366) && (height==768)) {
+									 embed.setAttribute("src", "http://CSEE-4KTXR/live3/inedx.m3u8");
+						}
+					else if ((width==1024) && (height==768)) {
+							 embed.setAttribute("src", "http://CSEE-4KTXR/live3/inedx.m3u8");
+						}
+					else if ((width==1280) && (height==800)) {
+							 embed.setAttribute("src", "http://CSEE-4KTXR/live3/inedx.m3u8");
+						}
+					else if ((width==800) && (height==600)) {
+							 embed.setAttribute("src", "http://CSEE-4KTXR/live3/inedx.m3u8");
+						}
+					else if ((width==2560) && (height==1440)) {
+								 embed.setAttribute("src", "http://CSEE-4KTXR/live3/inedx.m3u8");
+					}
+
+				else {
+						 embed.setAttribute("src", "http://CSEE-4KTXR/live2/inedx.m3u8");
+		}
+
+            alert (embed.src);
+            alert (width);
+            alert (height);
+        }
+    </script>
+</head>
+<body onLoad = "GetURL()">
+    <embed id="myEmbed" type="application/x-mplayer2"
+            src=""
+            width="320px" height="286px" autostart="true" showcontrols="1"
+            showstatusbar="0" showdisplay="0" />
+    <br /><br />
+
+</body>
